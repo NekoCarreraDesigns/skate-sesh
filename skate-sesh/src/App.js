@@ -1,11 +1,13 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
     <>
-      <div>
-        <h1>Welcome to skate sesh!</h1>
-      </div>
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
+      </Routes>
     </>
   );
 }
