@@ -1,0 +1,9 @@
+.nav-link {
+    font-size: 24px;
+    color: rgb(233, 233, 233);
+    font-family: serif;
+    margin: 10px;
+}
+.nav-link:hover {
+    color: rgb(123, 233, 12);
+}
