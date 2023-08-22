@@ -1,0 +1,24 @@
+.home-page-paragraph {
+    font-size: 32px;
+    color: rgb(255, 233,233);
+    letter-spacing: 2px;
+    text-shadow: 1px 1px;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+}
+
+.home-button {
+    padding: 20px;
+    border-radius: 10px;
+    width: 100px;
+    color: rgb(255, 255,233);
+    font-size: 32px;
+    background: radial-gradient(circle, rgb(123, 23, 233), rgb(23, 123, 222));
+}
+
+.skate-image {
+    margin: 10px;
+}
