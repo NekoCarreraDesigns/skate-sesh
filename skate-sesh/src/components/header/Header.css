@@ -1,29 +1,8 @@
 .page-header {
-    color: rgb(123, 155,233);
+    color: rgb(233, 233,233);
     font-size: 32px;
     letter-spacing: 2px;
     text-shadow: 1px 1px;
     text-align: center;
     text-decoration: underline;
-}
-
-.home-page-paragraph {
-    font-size: 32px;
-    color: rgb(123, 155,233);
-    letter-spacing: 2px;
-    text-shadow: 1px 1px;
-}
-
-.button-div {
-    display: flex;
-    justify-content: center;
-}
-
-.home-button {
-    padding: 20px;
-    border-radius: 10px;
-    width: 100px;
-    color: rgb(123, 155,233);
-    font-size: 32px;
-    background: radial-gradient(circle, rgb(123, 23, 233), rgb(23, 123, 222));
 }
