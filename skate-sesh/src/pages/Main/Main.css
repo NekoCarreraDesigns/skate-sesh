@@ -1,0 +1,12 @@
+.password-input, .username-input, .name, .username, .password {
+    width: 300px;
+    height: 20px;
+    border-radius: 5px;
+    border-color: whitesmoke;
+    border-style: ridge;
+}
+
+.form-div {
+    display: block;
+    justify-content: center;
+}
