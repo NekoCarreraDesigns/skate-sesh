@@ -14,6 +14,9 @@ const Navbar = () => {
       <a className='nav-link' href='/sessions'>
         Sesh
       </a>
+      <a className='nav-link' href='/trick-tips'>
+        Trick Tips
+      </a>
     </>
   );
 };
