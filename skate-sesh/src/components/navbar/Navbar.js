@@ -7,6 +7,7 @@ const Navbar = () => {
       <a className='nav-link' href='/'>
         Home
       </a>
+
       <a className='nav-link' href='/main'>
         Login
       </a>
