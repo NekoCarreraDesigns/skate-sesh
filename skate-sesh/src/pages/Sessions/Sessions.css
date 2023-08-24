@@ -1,0 +1,18 @@
+.trick-div-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.trick-div-box {
+    padding: 10px;
+}
+
+.trick-input {
+    border-radius: 5px;
+    width: 200px;
+}
+
+.trick-div-header, .trick-div-paragraph {
+    color: rgb(233,233,233);
+}
