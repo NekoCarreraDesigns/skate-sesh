@@ -6,6 +6,8 @@ import Main from "./pages/Main/Main";
 import Sessions from "./pages/Sessions/Sessions";
 import Grind from "./pages/Sessions/Grind";
 import Slides from "./pages/Sessions/Slide";
+import Rotations from "./pages/Sessions/Rotations";
+import Vert from "./pages/Sessions/Vert";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path='/sessions' element={<Sessions />}></Route>
         <Route path='/sessions/grind-tricks' element={<Grind />}></Route>
         <Route path='/sessions/slide-tricks' element={<Slides />}></Route>
+        <Route path='/sessions/rotation-tricks' element={<Rotations />}></Route>
+        <Route path='/sessions/vert-tricks' element={<Vert />}></Route>
       </Routes>
     </>
   );
