@@ -3,6 +3,7 @@ import "./Sessions.css";
 import Trick from "../../components/trick/Trick";
 import Header from "../../components/header/Header";
 import TrickNav from "../../components/TrickNav";
+import RotationDirection from "../../components/rotationDirection/RotationDirection";
 
 const Grind = () => {
   const options = ["normal", "nollie", "switch", "fakie"];
@@ -41,6 +42,7 @@ const Grind = () => {
           />
         ))}
       </div>
+      <RotationDirection />
       <div className='trick-div-container'>
         {options.map((option, index) => (
           <Trick
@@ -55,6 +57,7 @@ const Grind = () => {
           />
         ))}
       </div>
+      <RotationDirection />
       <div className='trick-div-container'>
         {options.map((option, index) => (
           <Trick
@@ -69,6 +72,7 @@ const Grind = () => {
           />
         ))}
       </div>
+      <RotationDirection />
       <div className='trick-div-container'>
         {options.map((option, index) => (
           <Trick
@@ -83,6 +87,7 @@ const Grind = () => {
           />
         ))}
       </div>
+      <RotationDirection />
       <div className='trick-div-container'>
         {options.map((option, index) => (
           <Trick
@@ -97,6 +102,7 @@ const Grind = () => {
           />
         ))}
       </div>
+      <RotationDirection />
       <div className='trick-div-container'>
         {options.map((option, index) => (
           <Trick
@@ -111,6 +117,7 @@ const Grind = () => {
           />
         ))}
       </div>
+      <RotationDirection />
       <div className='trick-div-container'>
         {options.map((option, index) => (
           <Trick
@@ -153,6 +160,7 @@ const Grind = () => {
           />
         ))}
       </div>
+      <RotationDirection />
       <div className='trick-div-container'>
         {options.map((option, index) => (
           <Trick
@@ -195,6 +203,7 @@ const Grind = () => {
           />
         ))}
       </div>
+      <RotationDirection />
       <div className='trick-div-container'>
         {options.map((option, index) => (
           <p key={index}>
