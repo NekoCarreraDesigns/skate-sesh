@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Sessions.css";
 import Trick from "../../components/trick/Trick";
 import Header from "../../components/header/Header";
+import TrickNav from "../../components/TrickNav";
 
 const Grind = () => {
   const options = ["normal", "nollie", "switch", "fakie"];
@@ -24,13 +25,7 @@ const Grind = () => {
   return (
     <>
       <Header />
-      <nav className='trick-nav'>
-        <a href='/sessions'>Flip Tricks</a>
-        <br />
-        <a href='/sessions/grind-tricks'>Grind Tricks</a>
-        <br />
-        <a href='/sessions/slide-tricks'>Slide Tricks</a>
-      </nav>
+      <TrickNav />
       <h1 className='trick-div-header'>Grind Tricks</h1>
       <div className='trick-div-container'>
         {options.map((option, index) => (
