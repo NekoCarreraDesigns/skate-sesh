@@ -64,6 +64,7 @@ const Trick = ({
           setTotalLandedTricks(newValue);
         }}
       />
+
       <button onClick={handleCalculateClick}>Calculate</button>
       <p>Total Completed Tricks: {totalLandedTricks}</p>
       <p>Total Tried Tricks: {totalTriedTricks}</p>
