@@ -23,7 +23,7 @@ const RotationDirection = () => {
     <>
       <div className='checkbox-group'>
         <div className='checkbox-item'>
-          <label>Backside:</label>
+          <label className='checkbox-label'>Backside:</label>
           <input
             type='checkbox'
             checked={isBackside}
@@ -31,7 +31,7 @@ const RotationDirection = () => {
           />
         </div>
         <div className='checkbox-item'>
-          <label>Frontside:</label>
+          <label className='checkbox-label'>Frontside:</label>
           <input
             type='checkbox'
             checked={isFrontside}
@@ -42,7 +42,7 @@ const RotationDirection = () => {
       {isBackside && isFrontside && (
         <p className='warning'>Please select only one rotation type.</p>
       )}
-      <p>
+      <p className='checkbox-paragraph'>
         Direction:{" "}
         {isBackside ? "Backside" : isFrontside ? "Frontside" : "None"}
       </p>

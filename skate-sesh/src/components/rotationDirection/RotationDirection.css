@@ -1,0 +1,16 @@
+.checkbox-group {
+    display: grid;
+    margin: 10px;
+}
+
+.checkbox-item {
+    border-radius: 50px;
+}
+
+.checkbox-label, .checkbox-paragraph {
+    color: rgb(255,233,233);
+}
+
+.checkbox-paragraph {
+    margin: 10px;
+}

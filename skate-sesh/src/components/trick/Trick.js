@@ -33,7 +33,7 @@ const Trick = ({
         {" "}
         Trick Name: {options} {trickName}
       </h4>
-      <label>How many did you try?</label>
+      <label className='trick-label'>How many did you try?</label>
       <input
         className='trick-input'
         trickName={trickName}
@@ -50,7 +50,7 @@ const Trick = ({
         }}
       />
       <br />
-      <label>How many did you land?</label>
+      <label className='trick-label'>How many did you land?</label>
       <input
         className='trick-input'
         placeholder='how many did you land?'
@@ -66,9 +66,13 @@ const Trick = ({
       />
 
       <button onClick={handleCalculateClick}>Calculate</button>
-      <p>Total Completed Tricks: {totalLandedTricks}</p>
-      <p>Total Tried Tricks: {totalTriedTricks}</p>
-      <p>Completion Percentage: {calculateCompletionPercentage()}%</p>
+      <p className='trick-paragraph'>
+        Total Completed Tricks: {totalLandedTricks}
+      </p>
+      <p className='trick-paragraph'>Total Tried Tricks: {totalTriedTricks}</p>
+      <p className='trick-paragraph'>
+        Completion Percentage: {calculateCompletionPercentage()}%
+      </p>
     </div>
   );
 };
