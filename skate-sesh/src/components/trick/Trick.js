@@ -70,9 +70,9 @@ const Trick = ({
         Total Completed Tricks: {totalLandedTricks}
       </p>
       <p className='trick-paragraph'>Total Tried Tricks: {totalTriedTricks}</p>
-      <p className='trick-paragraph'>
+      {/* <p className='trick-paragraph'>
         Completion Percentage: {calculateCompletionPercentage()}%
-      </p>
+      </p> */}
     </div>
   );
 };
