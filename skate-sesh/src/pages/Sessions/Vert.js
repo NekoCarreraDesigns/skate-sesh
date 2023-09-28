@@ -27,6 +27,7 @@ const Vert = () => {
     <>
       <Header />
       <TrickNav />
+      <h1 className='trick-div-header'>Vert Tricks</h1>
       <div className='trick-div-container'>
         {options.map((option, index) => (
           <Trick
@@ -285,7 +286,8 @@ const Vert = () => {
       <div className='trick-div-container'>
         {options.map((option, index) => (
           <p className='trick-paragraph' key={index}>
-            {option} Completion Percentage: {completionPercentages[index]}%
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
           </p>
         ))}
       </div>
