@@ -206,7 +206,7 @@ const Grind = () => {
       <RotationDirection />
       <div className='trick-div-container'>
         {options.map((option, index) => (
-          <p key={index}>
+          <p className='trick-paragraph' key={index}>
             {option} Completion Percentage: {completionPercentages[index]}%
           </p>
         ))}

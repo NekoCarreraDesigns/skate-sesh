@@ -105,7 +105,73 @@ const Slides = () => {
       <RotationDirection />
       <div className='trick-div-container'>
         {options.map((option, index) => (
-          <p key={index}>
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage: {completionPercentages[index]}%
+          </p>
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
+          <Trick
+            key={index}
+            trickName='Dark Slide'
+            options={option}
+            initialTotalTried={0}
+            initialTotalLanded={0}
+            onCompletionPercentageChange={(percentage) =>
+              updateCompletionPercentage(index, percentage)
+            }
+          />
+        ))}
+      </div>
+      <RotationDirection />
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage: {completionPercentages[index]}%
+          </p>
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
+          <Trick
+            key={index}
+            trickName='Casper Slide'
+            options={option}
+            initialTotalTried={0}
+            initialTotalLanded={0}
+            onCompletionPercentageChange={(percentage) =>
+              updateCompletionPercentage(index, percentage)
+            }
+          />
+        ))}
+      </div>
+      <RotationDirection />
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage: {completionPercentages[index]}%
+          </p>
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
+          <Trick
+            key={index}
+            trickName='Primo Slide'
+            options={option}
+            initialTotalTried={0}
+            initialTotalLanded={0}
+            onCompletionPercentageChange={(percentage) =>
+              updateCompletionPercentage(index, percentage)
+            }
+          />
+        ))}
+      </div>
+      <RotationDirection />
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
             {option} Completion Percentage: {completionPercentages[index]}%
           </p>
         ))}
