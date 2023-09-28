@@ -8,6 +8,9 @@ import Grind from "./pages/Sessions/Grind";
 import Slides from "./pages/Sessions/Slide";
 import Rotations from "./pages/Sessions/Rotations";
 import Vert from "./pages/Sessions/Vert";
+import Manuals from "./pages/Sessions/Manual";
+import Grabs from "./pages/Sessions/Grab";
+import Freestyle from "./pages/Sessions/Freestyle";
 
 function App() {
   return (
@@ -21,6 +24,11 @@ function App() {
         <Route path='/sessions/slide-tricks' element={<Slides />}></Route>
         <Route path='/sessions/rotation-tricks' element={<Rotations />}></Route>
         <Route path='/sessions/vert-tricks' element={<Vert />}></Route>
+        <Route path='/sessions/manual-tricks' element={<Manuals />}></Route>
+        <Route path='/sessions/grab-tricks' element={<Grabs />}></Route>
+        <Route
+          path='/sessions/freestyle-tricks'
+          element={<Freestyle />}></Route>
       </Routes>
     </>
   );
