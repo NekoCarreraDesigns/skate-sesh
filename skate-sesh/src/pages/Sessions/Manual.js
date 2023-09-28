@@ -27,6 +27,7 @@ const Manuals = () => {
     <>
       <Header />
       <TrickNav />
+      <h1 className='trick-div-header'>Manual Tricks</h1>
       <div className='trick-div-container'>
         {options.map((option, index) => (
           <Trick
@@ -43,6 +44,13 @@ const Manuals = () => {
       </div>
       <div className='trick-div-container'>
         {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage: {completionPercentages[index]}%
+          </p>
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
           <Trick
             key={index}
             trickName='tail manual'
@@ -53,6 +61,13 @@ const Manuals = () => {
               updateCompletionPercentage(index, percentage)
             }
           />
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage: {completionPercentages[index]}%
+          </p>
         ))}
       </div>
     </>
