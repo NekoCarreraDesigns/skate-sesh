@@ -1,0 +1,13 @@
+.trick-nav {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    margin: 10px;
+    border-style: double;
+    border-color: rgb(255,233,233);
+}
+
+.trick-nav-header {
+    color: rgb(255,233,233);
+    text-align: center;
+    text-decoration: underline;
+}

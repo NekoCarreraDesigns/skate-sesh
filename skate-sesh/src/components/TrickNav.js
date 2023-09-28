@@ -5,6 +5,7 @@ const TrickNav = () => {
   return (
     <>
       <nav className='trick-nav'>
+        <h3 className='trick-nav-header'>Tricks</h3>
         <a href='/sessions'>Flip Tricks</a>
         <br />
         <a href='/sessions/grind-tricks'>Grind Tricks</a>
