@@ -30,8 +30,7 @@ const Trick = ({
   return (
     <div className='trick-div-box'>
       <h4 className='trick-div-header'>
-        {" "}
-        Trick Name: {options} {trickName}
+        {options} {trickName}
       </h4>
       <label className='trick-label'>How many did you try?</label>
       <input

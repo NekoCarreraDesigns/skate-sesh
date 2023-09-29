@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/main' element={<Main />}></Route>
-        <Route path='/sessions' element={<Sessions />}></Route>
+        <Route path='/sessions/flip-tricks' element={<Sessions />}></Route>
         <Route path='/sessions/grind-tricks' element={<Grind />}></Route>
         <Route path='/sessions/slide-tricks' element={<Slides />}></Route>
         <Route path='/sessions/rotation-tricks' element={<Rotations />}></Route>

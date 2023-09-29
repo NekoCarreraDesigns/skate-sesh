@@ -1,13 +1,14 @@
-.checkbox-group {
-    display: grid;
-    grid-template-columns: (6, 1fr);
-    gap: 1px;
-    margin: 10px;
+.checkbox-group, .checkbox-paragraph{
+    display: flex;
+    justify-content: center;
+    
 }
 
 .checkbox-item {
     border-radius: 50px;
+
 }
+
 
 .checkbox-label, .checkbox-paragraph {
     color: rgb(255,233,233);
