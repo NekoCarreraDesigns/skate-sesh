@@ -45,7 +45,8 @@ const Manuals = () => {
       <div className='trick-div-container'>
         {options.map((option, index) => (
           <p className='trick-paragraph' key={index}>
-            {option} Completion Percentage: {completionPercentages[index]}%
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
           </p>
         ))}
       </div>
@@ -66,7 +67,8 @@ const Manuals = () => {
       <div className='trick-div-container'>
         {options.map((option, index) => (
           <p className='trick-paragraph' key={index}>
-            {option} Completion Percentage: {completionPercentages[index]}%
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
           </p>
         ))}
       </div>

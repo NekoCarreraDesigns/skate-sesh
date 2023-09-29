@@ -45,6 +45,14 @@ const Grind = () => {
       <RotationDirection />
       <div className='trick-div-container'>
         {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
           <Trick
             key={index}
             trickName='5.0'
@@ -58,6 +66,14 @@ const Grind = () => {
         ))}
       </div>
       <RotationDirection />
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
       <div className='trick-div-container'>
         {options.map((option, index) => (
           <Trick
@@ -75,6 +91,14 @@ const Grind = () => {
       <RotationDirection />
       <div className='trick-div-container'>
         {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
           <Trick
             key={index}
             trickName='crooked grind'
@@ -88,6 +112,14 @@ const Grind = () => {
         ))}
       </div>
       <RotationDirection />
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
       <div className='trick-div-container'>
         {options.map((option, index) => (
           <Trick
@@ -105,6 +137,14 @@ const Grind = () => {
       <RotationDirection />
       <div className='trick-div-container'>
         {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
           <Trick
             key={index}
             trickName='smith grind'
@@ -118,6 +158,14 @@ const Grind = () => {
         ))}
       </div>
       <RotationDirection />
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
       <div className='trick-div-container'>
         {options.map((option, index) => (
           <Trick
@@ -134,6 +182,14 @@ const Grind = () => {
       </div>
       <div className='trick-div-container'>
         {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
           <Trick
             key={index}
             trickName='bennet grind'
@@ -144,6 +200,14 @@ const Grind = () => {
               updateCompletionPercentage(index, percentage)
             }
           />
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
         ))}
       </div>
       <div className='trick-div-container'>
@@ -163,6 +227,14 @@ const Grind = () => {
       <RotationDirection />
       <div className='trick-div-container'>
         {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
           <Trick
             key={index}
             trickName='hurricane grind'
@@ -177,6 +249,14 @@ const Grind = () => {
       </div>
       <div className='trick-div-container'>
         {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
           <Trick
             key={index}
             trickName='sugarcane grind'
@@ -187,6 +267,14 @@ const Grind = () => {
               updateCompletionPercentage(index, percentage)
             }
           />
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
         ))}
       </div>
       <div className='trick-div-container'>

@@ -43,6 +43,14 @@ const Sessions = () => {
       </div>
       <div className='trick-div-container'>
         {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
           <Trick
             key={index}
             trickName='varial kickflip'
@@ -53,6 +61,14 @@ const Sessions = () => {
               updateCompletionPercentage(index, percentage)
             }
           />
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
         ))}
       </div>
       <div className='trick-div-container'>
@@ -71,6 +87,14 @@ const Sessions = () => {
       </div>
       <div className='trick-div-container'>
         {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
           <Trick
             key={index}
             trickName='heelflip'
@@ -81,6 +105,14 @@ const Sessions = () => {
               updateCompletionPercentage(index, percentage)
             }
           />
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
         ))}
       </div>
       <div className='trick-div-container'>
@@ -99,6 +131,14 @@ const Sessions = () => {
       </div>
       <div className='trick-div-container'>
         {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
           <Trick
             key={index}
             trickName='varial heelflip'
@@ -113,6 +153,14 @@ const Sessions = () => {
       </div>
       <div className='trick-div-container'>
         {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
           <Trick
             key={index}
             trickName='treflips'
@@ -123,6 +171,14 @@ const Sessions = () => {
               updateCompletionPercentage(index, percentage)
             }
           />
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
         ))}
       </div>
       <div className='trick-div-container'>

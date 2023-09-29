@@ -45,6 +45,37 @@ const Vert = () => {
       <RotationDirection />
       <div className='trick-div-container'>
         {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
+          <Trick
+            key={index}
+            trickName='540'
+            options={option}
+            initialTotalTried={0}
+            initialTotalLanded={0}
+            onCompletionPercentageChange={(percentage) =>
+              updateCompletionPercentage(index, percentage)
+            }
+          />
+        ))}
+      </div>
+      <RotationDirection />
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
           <Trick
             key={index}
             trickName='720'
@@ -58,6 +89,14 @@ const Vert = () => {
         ))}
       </div>
       <RotationDirection />
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
       <div className='trick-div-container'>
         {options.map((option, index) => (
           <Trick
@@ -75,6 +114,14 @@ const Vert = () => {
       <RotationDirection />
       <div className='trick-div-container'>
         {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
           <Trick
             key={index}
             trickName='1080'
@@ -88,6 +135,14 @@ const Vert = () => {
         ))}
       </div>
       <RotationDirection />
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
       <div className='trick-div-container'>
         {options.map((option, index) => (
           <Trick
@@ -105,6 +160,14 @@ const Vert = () => {
       <RotationDirection />
       <div className='trick-div-container'>
         {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
           <Trick
             key={index}
             trickName='Mctwist'
@@ -118,6 +181,14 @@ const Vert = () => {
         ))}
       </div>
       <RotationDirection />
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
       <div className='trick-div-container'>
         {options.map((option, index) => (
           <Trick
@@ -135,6 +206,14 @@ const Vert = () => {
       <RotationDirection />
       <div className='trick-div-container'>
         {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
           <Trick
             key={index}
             trickName='Kickflip Mctwist'
@@ -148,6 +227,14 @@ const Vert = () => {
         ))}
       </div>
       <RotationDirection />
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
       <div className='trick-div-container'>
         {options.map((option, index) => (
           <Trick
@@ -165,6 +252,14 @@ const Vert = () => {
       <RotationDirection />
       <div className='trick-div-container'>
         {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
           <Trick
             key={index}
             trickName='Sad Plant'
@@ -178,6 +273,14 @@ const Vert = () => {
         ))}
       </div>
       <RotationDirection />
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
       <div className='trick-div-container'>
         {options.map((option, index) => (
           <Trick
@@ -195,6 +298,14 @@ const Vert = () => {
       <RotationDirection />
       <div className='trick-div-container'>
         {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
           <Trick
             key={index}
             trickName='Miller Flip'
@@ -208,6 +319,14 @@ const Vert = () => {
         ))}
       </div>
       <RotationDirection />
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
       <div className='trick-div-container'>
         {options.map((option, index) => (
           <Trick
@@ -225,6 +344,14 @@ const Vert = () => {
       <RotationDirection />
       <div className='trick-div-container'>
         {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
           <Trick
             key={index}
             trickName='Miller flip'
@@ -238,6 +365,14 @@ const Vert = () => {
         ))}
       </div>
       <RotationDirection />
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
       <div className='trick-div-container'>
         {options.map((option, index) => (
           <Trick
@@ -255,6 +390,14 @@ const Vert = () => {
       <RotationDirection />
       <div className='trick-div-container'>
         {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
           <Trick
             key={index}
             trickName='Texas Plant'
@@ -268,6 +411,14 @@ const Vert = () => {
         ))}
       </div>
       <RotationDirection />
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
       <div className='trick-div-container'>
         {options.map((option, index) => (
           <Trick

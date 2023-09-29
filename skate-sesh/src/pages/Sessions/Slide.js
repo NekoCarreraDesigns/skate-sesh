@@ -45,6 +45,14 @@ const Slides = () => {
       <RotationDirection />
       <div className='trick-div-container'>
         {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
           <Trick
             key={index}
             trickName='tail slide'
@@ -58,6 +66,14 @@ const Slides = () => {
         ))}
       </div>
       <RotationDirection />
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
       <div className='trick-div-container'>
         {options.map((option, index) => (
           <Trick
@@ -75,6 +91,14 @@ const Slides = () => {
       <RotationDirection />
       <div className='trick-div-container'>
         {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
           <Trick
             key={index}
             trickName='bluntslide'
@@ -88,6 +112,14 @@ const Slides = () => {
         ))}
       </div>
       <RotationDirection />
+      <div className='trick-div-container'>
+        {options.map((option, index) => (
+          <p className='trick-paragraph' key={index}>
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
+          </p>
+        ))}
+      </div>
       <div className='trick-div-container'>
         {options.map((option, index) => (
           <Trick
@@ -106,7 +138,8 @@ const Slides = () => {
       <div className='trick-div-container'>
         {options.map((option, index) => (
           <p className='trick-paragraph' key={index}>
-            {option} Completion Percentage: {completionPercentages[index]}%
+            {option} Completion Percentage:{" "}
+            {completionPercentages[index].toFixed(2)}%
           </p>
         ))}
       </div>

@@ -1,7 +1,7 @@
 .trick-div-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 5px;
     border-style: double;
     border-color: rgb(233,233,233);
 }
@@ -17,9 +17,4 @@
 
 .trick-div-header, .trick-div-paragraph {
     color: rgb(233,233,233);
-}
-
-.trick-div-header {
-    text-align: center;
-    text-decoration: underline;
 }
