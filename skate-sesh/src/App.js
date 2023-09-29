@@ -11,6 +11,7 @@ import Vert from "./pages/Sessions/Vert";
 import Manuals from "./pages/Sessions/Manual";
 import Grabs from "./pages/Sessions/Grab";
 import Freestyle from "./pages/Sessions/Freestyle";
+import Dashboard from "./pages/Dashboard/Dashboard";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/main' element={<Main />}></Route>
+        <Route path='/user-dashboard' element={<Dashboard />}></Route>
         <Route path='/sessions/flip-tricks' element={<Sessions />}></Route>
         <Route path='/sessions/grind-tricks' element={<Grind />}></Route>
         <Route path='/sessions/slide-tricks' element={<Slides />}></Route>
