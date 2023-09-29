@@ -11,11 +11,14 @@ const Navbar = () => {
       <a className='nav-link' href='/main'>
         Login
       </a>
-      <a className='nav-link' href='/sessions'>
+      <a className='nav-link' href='/sessions/flip-tricks'>
         Sesh
       </a>
       <a className='nav-link' href='/trick-tips'>
         Trick Tips
+      </a>
+      <a className='nav-link' href='/user-dashboard'>
+        Dashboard
       </a>
     </>
   );
