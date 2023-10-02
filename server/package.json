@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "server for skate-sesh app",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "keywords": [
+    "server",
+    "api"
+  ],
+  "author": "Nicholas  Maas",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "connect-mongodb-session": "^3.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongodb": "^6.1.0",
+    "mongoose": "^7.5.3",
+    "passport": "^0.6.0"
+  }
+}
