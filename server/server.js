@@ -11,7 +11,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
-// app.use(require("./routes/page"));
+app.use(require("./routes/page"));
 
 app.listen(PORT, () => {
   db.connectToServer(function (err, res) {
