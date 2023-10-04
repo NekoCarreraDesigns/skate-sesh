@@ -22,27 +22,13 @@ const Main = () => {
         <br />
         <button className='login-button'>Login</button>
         <br />
+        <a href='/user-sign-up' className='sign-up-link'>
+          Not an existing user. Please sign up here
+        </a>
         <br />
-        <input
-          className='name'
-          label='name'
-          placeholder='what is your full name'></input>
-        <br />
-        <br />
-        <input
-          className='username'
-          label='username'
-          placeholder='please enter a username'></input>
-        <br />
-        <br />
-        <input
-          className='password'
-          type='password'
-          label='password'
-          placeholder='please type in a password'></input>
-        <br />
-        <br />
-        <button className='sign-up-button'>Sign Up</button>
+        <a className='forgotten-password-link' href='/password-reset'>
+          Forgot Password
+        </a>
       </div>
     </>
   );
