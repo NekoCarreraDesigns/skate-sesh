@@ -3,9 +3,10 @@ const routes = express.Router();
 const bcrypt = require("bcrypt");
 const User = require("../models/user");
 
-routes.post("/register", async (req, res) => {
+routes.post("/user-sign-up", async (req, res) => {
   try {
-    const userExists = await User.findOne({ username: req.body.username });
+    const { username, email, password } = req.body;
+    const userExists = await User.findOne({ $or: [{ username }, { email }] });
     if (userExists) {
       res
         .status(400)
@@ -13,15 +14,16 @@ routes.post("/register", async (req, res) => {
     }
 
     const pinkSalt = 13;
-    const hashedPassword = await bcrypt.hash(req.body.password, pinkSalt);
+    const hashedPassword = await bcrypt.hash(password, pinkSalt);
 
     const newUser = new User({
-      username: req.body.username,
+      username,
+      email,
       password: hashedPassword,
     });
 
-    const savedUser = await newUser.save();
-    res.status(201).json(savedUser);
+    await newUser.save();
+    res.status(201).json({ message: "Registration Successful!" });
   } catch (error) {
     res.status(500).json({ message: "Registration error", error });
   }

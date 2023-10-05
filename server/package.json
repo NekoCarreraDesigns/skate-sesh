@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "server for skate-sesh app",
   "main": "server.js",
+  "proxy": "http://localhost:3001",
   "scripts": {
     "test": "node server.js"
   },
