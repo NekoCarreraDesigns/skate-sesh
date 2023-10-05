@@ -21,7 +21,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/main' element={<Main />}></Route>
-        <Route path='/user-sign-up' element={<Registration />}></Route>
+        <Route path='/sign-up' element={<Registration />}></Route>
         <Route path='/user-dashboard' element={<Dashboard />}></Route>
         <Route path='/sessions/flip-tricks' element={<Sessions />}></Route>
         <Route path='/sessions/grind-tricks' element={<Grind />}></Route>
