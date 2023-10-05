@@ -1,35 +1,90 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Main.css";
 
 const Registration = () => {
+  const navigate = useNavigate();
+  const [formData, setFormData] = useState({
+    firstName: "",
+    email: "",
+    username: "",
+    password: "",
+  });
+
+  const handleNameChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      let path = `/main`;
+      const response = await fetch("/user-sign-up", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      if (response.ok) {
+        response.status(200).json({ message: "Registration Successful" });
+        navigate(path);
+      } else {
+        const data = await response.json();
+        console.error(data.message);
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <>
-      <div className='form-div'>
+      <form className='form-div' onSubmit={handleFormSubmit}>
         <p className='intro-paragraph'>
           Please sign up to use the skate sesh app
         </p>
         <br />
         <input
-          className='username'
+          className='first-name'
           label='first-name'
-          placeholder='please enter your first name'></input>
+          placeholder='please enter your first name'
+          name='firstName'
+          value={formData.firstName}
+          onChange={handleNameChange}></input>
+        <br />
+        <br />
+        <input
+          className='email'
+          label='first-name'
+          placeholder='please enter your email address'
+          name='email'
+          value={formData.email}
+          onChange={handleNameChange}></input>
         <br />
         <br />
         <input
           className='username'
           label='username'
-          placeholder='please enter a username'></input>
+          placeholder='please enter a username'
+          name='username'
+          value={formData.username}
+          onChange={handleNameChange}></input>
         <br />
         <br />
         <input
           className='password'
           type='password'
           label='password'
-          placeholder='please type in a password'></input>
+          placeholder='please type in a password'
+          name='password'
+          value={formData.password}
+          onChange={handleNameChange}></input>
         <br />
         <br />
-        <button className='sign-up-button'>Sign Up</button>
-      </div>
+        <button className='sign-up-button' type='submit'>
+          Sign Up
+        </button>
+      </form>
     </>
   );
 };

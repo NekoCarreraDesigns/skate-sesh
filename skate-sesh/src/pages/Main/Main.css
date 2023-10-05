@@ -1,4 +1,4 @@
-.password-input, .username-input, .name, .username, .password {
+.password-input, .username-input, .name, .username, .email, .first-name, .password {
     width: 300px;
     height: 20px;
     border-radius: 5px;

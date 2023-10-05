@@ -22,7 +22,7 @@ const Main = () => {
         <br />
         <button className='login-button'>Login</button>
         <br />
-        <a href='/user-sign-up' className='sign-up-link'>
+        <a href='/sign-up' className='sign-up-link'>
           Not an existing user. Please sign up here
         </a>
         <br />
