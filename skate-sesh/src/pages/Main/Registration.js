@@ -18,22 +18,21 @@ const Registration = () => {
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    try {
-      let path = `/main`;
-      const response = await fetch("/user-sign-up", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-      if (response.ok) {
-        response.status(200).json({ message: "Registration Successful" });
-        navigate(path);
-      } else {
-        const data = await response.json();
-        console.error(data.message);
-      }
-    } catch (error) {
-      console.error(error);
+    let path = `/main`;
+    const response = await fetch("/user-sign-up", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+    if (response.ok) {
+      const data = await response.json();
+      console.log(data.message);
+      console.log(response);
+      navigate(path);
+    } else {
+      const errorData = await response.json();
+      console.error(errorData.message);
+      console.log(errorData);
     }
   };
 
